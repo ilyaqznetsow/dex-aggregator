@@ -1,0 +1,18 @@
+# Dex Benchmark Report
+
+{% for group in groups %}
+## **Swap {{ group.input_amount | int }} TON to jetton**
+
+{% for stat in group.stats %}
+
+### {{ stat.provider_name }}
+{% if stat.tokens %}
+Profitable tokens: {{ ', '.join(stat.tokens) }}
+{% endif %}
+
+- Built the most profitable route: **{{ stat.profitable_hit }}/{{ stat.profitable_total }}**
+- Built route faster than others: **{{ stat.fast_hit_aggregators }}/{{ stat.fast_total_aggregators }}**
+
+{% endfor %}
+---
+{% endfor %}

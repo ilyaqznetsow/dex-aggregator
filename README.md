@@ -87,7 +87,6 @@ considered reliable.
 | DCA                        | ✅           | ❌          | ❌        | ❌       | ❌         |
 | Cashback                   | ✅           | ❌          | ❌        | ❌       | ❌         |
 | Exact-Out Swap             | ✅           | ❌          | ❌        | ❌       | ❌         |
-| Extended Documentation     | ✅           | ❌          | ❌        | ❌       | ❌         |
 | Widget Kit                 | ✅           | ❌          | ❌        | ❌       | ❌         |
 | Cross-device Settings Sync | ✅           | ❌          | ❌        | ❌       | ❌         |
 | Maximum Intermediates      | 5           | 3          | 3        | 3       | 3         |

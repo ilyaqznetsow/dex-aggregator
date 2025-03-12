@@ -1,4 +1,4 @@
-# Aggregators Benchmark ![Docker Pulls](https://img.shields.io/docker/pulls/etobaza/dex-aggregator) 
+# Aggregators Benchmark ![Docker Pulls](https://img.shields.io/docker/pulls/etobaza/dex-aggregator?style=flat-square&label=Docker%20Pulls) 
 
 ## Introduction
 

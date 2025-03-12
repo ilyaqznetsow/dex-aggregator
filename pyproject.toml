@@ -2,7 +2,7 @@
 name = "aggregator-researches"
 version = "0.1.0"
 description = ""
-authors = ["qznetsow <ilyaqznetsow@gmail.com>"]
+authors = ["@huester"]
 readme = "README.md"
 
 [tool.poetry.dependencies]

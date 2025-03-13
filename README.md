@@ -89,7 +89,7 @@ considered reliable.
 | Exact-Out Swap             | ✅           | ❌          | ❌        | ❌       | ❌         |
 | Widget Kit                 | ✅           | ❌          | ❌        | ❌       | ❌         |
 | Cross-device Settings Sync | ✅           | ❌          | ❌        | ❌       | ❌         |
-| Maximum Intermediates      | 5           | 3          | 3        | 3       | 3         |
+| Maximum Intermediates      | 3           | 3          | 3        | 3       | 3         |
 | Maximum Splits             | 20          | 4          | 4        | 4       | 4         |
 | Supported Languages        | 7           | 1          | 5        | 2       | 1         |
 | Supported Themes           | 3           | 2          | 1        | 1       | 1         |

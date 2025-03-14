@@ -112,7 +112,7 @@ API of rainbow.ag and titan.tg works unstably. If you are owner of these service
 For testing, more than 2000 routes were built and emulated on different servers in various locations. A total of 8
 hours of server time was spent.
 
-Data presented in the report was obtained on 12.03.2023
+Data presented in the report was obtained on 12.03.2025
 
 ## Docker
 

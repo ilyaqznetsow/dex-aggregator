@@ -13,6 +13,7 @@ from common.models import BlockchainToken, DexRouteProvider, BuildRouteRequest, 
 from loguru import logger
 
 from exporters.jinja_template import Jinja2Exporter
+from providers.dedust_router_v2 import DedustRouterV2Provider
 from providers.moki_ag import MokiAgProvider
 from providers.rainbow_ag import RainbowAgProvider
 from providers.swap_coffee import SwapCoffeeRouteProvider
@@ -117,7 +118,8 @@ async def run_benchmark():
         # To disable this functionality, set builder=None in the provider constructor
         # DedustProvider(swap_coffee),
         # StonfiProvider(swap_coffee),
-        MokiAgProvider(swap_coffee),
+        # MokiAgProvider(swap_coffee),
+        DedustRouterV2Provider()
     ]
 
     if options.exclude:

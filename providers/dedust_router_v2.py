@@ -31,10 +31,9 @@ class DedustRouterV2Provider(DexRouteProvider):
             "min_economy_bps": 0,
             "protocols": ["dedust", "stonfi_v1", "stonfi_v2"],
             "max_splits": request.max_splits,
-            "max_length": request.max_length
+            "max_length": min(request.max_length, 3)
         }
         response = await client.post(f"{self.api_url}/quote", json=body)
-
         response.raise_for_status()
 
         data = response.json()

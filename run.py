@@ -118,7 +118,7 @@ async def run_benchmark():
         # To disable this functionality, set builder=None in the provider constructor
         # DedustProvider(swap_coffee),
         # StonfiProvider(swap_coffee),
-        # MokiAgProvider(swap_coffee),
+        MokiAgProvider(swap_coffee),
         DedustRouterV2Provider()
     ]
 

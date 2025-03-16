@@ -33,9 +33,22 @@ def by_sorted_field(
 
     for symbol, results in by_output_symbol.items():
         results = sorted(results, key=extractor, reverse=reverse)
-        first = results[0]
+        best_result = extractor(results[0])
 
-        if type(first.provider) == provider_type:
+        provider_found = False
+        for result in results:
+            if type(result.provider) == provider_type:
+                provider_result = extractor(result)
+                if reverse:
+                    diff = 1 - provider_result / best_result if best_result != 0 else float('inf')
+                else:
+                    diff = 1 - best_result / provider_result if provider_result != 0 else float('inf')
+
+                if diff < 1e-4:
+                    provider_found = True
+                    break
+
+        if provider_found:
             hit_count += 1
             tokens.append(symbol)
 

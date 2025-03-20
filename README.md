@@ -21,7 +21,7 @@ ratio = output / input_amount
 ## Usage
 
 ```bash
-docker run --rm -v "$(pwd)/results:/code/results" -d etobaza/dex-aggregator:main sh -c "python scripts/collect_jettons.py && python3 run.py ---in 100,1000"
+docker run --rm -v "$(pwd)/results:/code/results" etobaza/dex-aggregator:main sh -c "python scripts/collect_jettons.py && python3 run.py ---in 100,1000"
 ```
 
 ```bash

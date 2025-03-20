@@ -29,7 +29,7 @@ class DedustRouterV2Provider(DexRouteProvider):
             "slippage_bps": int(slippage * 100 * 100),
             "min_pool_usd_tvl": "0",
             "min_economy_bps": 0,
-            "protocols": ["dedust", "stonfi_v1", "stonfi_v2"],
+            "protocols": [], # if empty - router will use all possible protocols
             "max_splits": request.max_splits,
             "max_length": min(request.max_length, 3)
         }
